@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/debug")
 public class DebugController {
 
-
     @RequestMapping
     public String debug() {
-        return "debugging page?";
+        return "debug";
     }
 }
