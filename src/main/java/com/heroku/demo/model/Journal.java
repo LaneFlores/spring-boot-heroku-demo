@@ -1,20 +1,23 @@
-package com.heroku.demo;
+package com.heroku.demo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-public class Record {
+public class Journal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @NotEmpty
+
+    @Column(name="data", nullable = false)
     private String data;
+
+    public Journal(int id, String data) {
+        this.id = id;
+        this.data = data;
+    }
 
     public String getData() {
         return data;

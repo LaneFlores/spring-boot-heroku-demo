@@ -1,8 +1,9 @@
 package com.heroku.demo;
 
+import com.heroku.demo.model.Journal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RecordRepository extends JpaRepository<Record, Long> {
+public interface JournalRepository extends JpaRepository<Journal, Long> {
 }

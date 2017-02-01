@@ -37,8 +37,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr th:each="record : ${records}">
-                        <td th:text="${record.data}">Some text</td>
+                    <tr th:each="journal : ${journalEntries}">
+                        <td th:text="${journal.data}">Some text</td>
                     </tr>
                 </tbody>
             </table>
