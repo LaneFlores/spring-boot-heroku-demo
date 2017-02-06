@@ -46,6 +46,6 @@ public class JdbcJournalDatabase implements JournalDatabase {
     }
 
     private void setConnection() throws SQLException {
-        if (this.connection == null || !this.connection.isValid(1000)) this.connection = dataSource.getConnection();
+        if (this.connection == null || !this.connection.isValid(1000) || this.connection.isClosed()) this.connection = dataSource.getConnection();
     }
 }
