@@ -27,7 +27,7 @@ import org.springframework.stereotype.Component;
         "com.heroku.demo"
 })
 public class Application {
-
+    // Change for CI test
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
