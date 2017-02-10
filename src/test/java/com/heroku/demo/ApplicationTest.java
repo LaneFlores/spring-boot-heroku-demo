@@ -13,7 +13,7 @@ public class ApplicationTest {
     public void testExample() {
         // This is a test, just trying to see if it runs.
         log.info("This is a test run.");
-        System.out.println("Test run?!");
+        System.out.println(com.practice.library.UtilityClass.getString());
     }
 
     /*@Test public void failingExample() {

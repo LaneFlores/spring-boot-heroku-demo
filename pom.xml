@@ -39,6 +39,13 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- github -->
+        <dependency>
+            <groupId>practice-library</groupId>
+            <artifactId>com.practice.maclib</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -55,6 +62,16 @@
         <repository>
             <id>spring-milestone</id>
             <url>https://repo.spring.io/libs-release</url>
+        </repository>
+
+        <!-- Private maven repository -->
+        <repository>
+            <id>practice-library-mvn-repo</id>
+            <url>https://raw.github.com/laneflores/practice-library/mvn-repo</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
         </repository>
     </repositories>
 
