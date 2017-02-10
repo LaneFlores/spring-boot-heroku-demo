@@ -16,8 +16,8 @@ public class ApplicationTest {
         System.out.println("Test run?!");
     }
 
-    @Test public void failingExample() {
+    /*@Test public void failingExample() {
         System.out.println("This is going to intentionally fail.");
         Assert.assertTrue(false);
-    }
+    }*/
 }
