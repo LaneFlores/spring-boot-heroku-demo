@@ -15,6 +15,7 @@ public class ApplicationTest {
         log.info("This is a test run.");
         System.out.println(com.practice.library.UtilityClass.getString());
         System.out.println(com.practice.library.winlib.SomeUtilities.getSomething());
+        // If both of these print, we were successful.
     }
 
     /*@Test public void failingExample() {
