@@ -8,5 +8,10 @@
             <username>${env.MAVEN_REPO_USERNAME}</username>
             <password>${env.MAVEN_REPO_PASSWORD}</password>
         </server>
+        <server>
+            <id>github-lordkahra</id>
+            <username>${env.MAVEN_REPO_USERNAME_LK}</username>
+            <password>${env.MAVEN_REPO_PASSWORD_LK}</password>
+        </server>
     </servers>
 </settings>

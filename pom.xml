@@ -46,6 +46,11 @@
             <artifactId>com.practice.maclib</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>practice-library-private</groupId>
+            <artifactId>com.practice.winlib</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -68,6 +73,15 @@
         <repository>
             <id>practice-library-mvn-repo</id>
             <url>https://raw.github.com/laneflores/practice-library/mvn-repo</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>practice-library-private-mvn-repo</id>
+            <url>https://raw.github.com/lordkahra/practice-library/mvn-repo</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>

@@ -14,6 +14,7 @@ public class ApplicationTest {
         // This is a test, just trying to see if it runs.
         log.info("This is a test run.");
         System.out.println(com.practice.library.UtilityClass.getString());
+        System.out.println(com.practice.library.winlib.SomeUtilities.getSomething());
     }
 
     /*@Test public void failingExample() {
